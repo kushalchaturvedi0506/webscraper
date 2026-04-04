@@ -132,7 +132,7 @@ class DailyScraper:
     # -------------------------------------------------------------
     # Daily pipeline
     # -------------------------------------------------------------
-    def run_daily_scrape(self, target_posts: int = 3):
+    def run_daily_scrape(self, target_posts: int = 50):
         logger.info("Fetching existing URLs from Excel")
 
         existing_urls = set(self.excel.get_all_urls())
